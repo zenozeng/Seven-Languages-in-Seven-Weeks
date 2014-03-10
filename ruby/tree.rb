@@ -2,6 +2,7 @@
 
 class Tree
 
+  # http://stackoverflow.com/questions/4370960/what-is-attr-accessor-in-ruby
   attr_accessor :children, :node_name
 
   def initialize(tree_obj)
