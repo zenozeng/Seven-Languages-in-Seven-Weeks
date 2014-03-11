@@ -8,32 +8,58 @@
 
 class CsvRow
   
-  def initialize(headers, contents)
-    # TODO
+  def initialize(headers, row)
+    @headers = headers
+    @row = row
   end
 
-  def self.method_missing name, *args
-    name = name.to_s
-    # TODO
+  def method_missing name, *args
+
+    # puts name.class => Symbol
+    # puts args.class => Array
+
+    # don't forget to convert to string
+    index = @headers.index(name.to_s)
+
+    # puts "Method_missing: #{name}"
+    # puts "Headers: #{@headers}"
+    # puts "Index: `#{index}`"
+
+    if index
+      @row[index]
+    else
+      nil
+    end
   end
 
 end
 
 class RubyCsv
 
-  attr_accessor :headers
-
   def initialize(filename)
+    read filename
+  end
+
+  def read(filename)
     file = File.new(filename)
+
+    # chomp 可以去除末尾的换行符
+    # gets 的副作用会 shift 掉首行
     @headers = file.gets.chomp.split(', ')
+    @result = []
 
     file.each do |row|
+      # << 是 Array 的 append
+      # [ 1, 2 ] << "c" << "d" << [ 3, 4 ]
+      #=>  [ 1, 2, "c", "d", [ 3, 4 ] ]
       @result << row.chomp.split(', ')
     end
   end
 
-  def each
-    # TODO
+  def each(&block)
+    @result.each do |row|
+      block.call CsvRow.new(@headers, row)
+    end
   end
 
 end
