@@ -10,6 +10,6 @@ method_missing 非常好用，具体见 ruby/csv
 
 ## [DOING] Clojure
 
-写 Clojure 我没有用 Emacs，试试一直想用的 Lighttable。
+写 Clojure 的话 Lighttable 不错。
 
 repl 可以用 `lein repl`
