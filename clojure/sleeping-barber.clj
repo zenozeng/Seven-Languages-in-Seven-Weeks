@@ -3,6 +3,8 @@
 
 ;; TODO： 目前这个实现有问题
 ;; 输出是： 本次营业共计理发 0 位顾客
+;; See: https://gist.github.com/search?l=clojure&q=sleeping+barber
+
 
 (def 座位 3)
 (def 顾客 (ref 0))
