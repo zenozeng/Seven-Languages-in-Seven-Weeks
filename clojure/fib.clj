@@ -9,4 +9,4 @@
   (nth (map first (iterate fib-pair [1 1]))
        (+ n 1)))
 
-(fib 40)
+(fib 400)
