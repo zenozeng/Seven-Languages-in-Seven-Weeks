@@ -1,3 +1,5 @@
+;;; Requrie
+
 (ns example.hello
   (:require-macros [cljs.core.async.macros :refer [go]])
   (:require [cljs.core.async :refer [put! chan <! close!]]))
@@ -6,6 +8,8 @@
   (let [c (chan)]
     (js/setTimeout (fn [] (close! c)) ms)
     c))
+
+;;; Code Start Here
 
 (let [ch (chan)]
   (go (while true
