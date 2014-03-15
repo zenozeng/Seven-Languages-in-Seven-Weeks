@@ -11,6 +11,6 @@
             [lein-ring "0.8.7"]]
   :cljsbuild {
     :builds [{:source-paths ["src"]
-              :compiler {:output-to "js/async.js"
+              :compiler {:output-to "js/test.js"
                          :optimizations :advanced
                          :pretty-print true}}]})
