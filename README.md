@@ -20,13 +20,13 @@ repl 可以用 `lein repl`
 
 ### 有意思的包
 
-- core.match (Clojure / ClojureScrit)
+- core.match (Clojure / ClojureScript)
 
-- core.logic (Clojure / ClojureScrit)
+- core.logic (Clojure / ClojureScript)
 
   Prolog-like relational programming
 
-- core.async (Clojure / ClojureScrit)
+- core.async (Clojure / ClojureScript)
 
   Facilities for async programming and communication in Clojure
 
