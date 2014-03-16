@@ -18,6 +18,10 @@ method_missing 非常好用，具体见 ruby/csv
 
 repl 可以用 `lein repl`
 
+### Qs
+
+- http://stackoverflow.com/questions/9983009/nothing-happen-inside-my-clojure-loop
+
 ### 有意思的包
 
 - core.match (Clojure / ClojureScript)
