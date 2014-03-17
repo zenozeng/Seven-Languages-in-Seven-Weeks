@@ -45,5 +45,3 @@ repl 可以用 `lein repl`
   顺带一说，ES6 的 Promise 也非常不错，简化了异步的操作。
 
 - algo.monads (Clojure)
-
-### [TODO] Sleeping Barber
