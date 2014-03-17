@@ -18,9 +18,15 @@ method_missing 非常好用，具体见 ruby/csv
 
 repl 可以用 `lein repl`
 
-### Qs
+### 相关的一些东西
 
 - http://stackoverflow.com/questions/9983009/nothing-happen-inside-my-clojure-loop
+
+- http://adambard.com/blog/clojure-concurrency-smorgasbord/
+
+- http://www.blogjava.net/killme2008/category/archive/2010/07/archive/2010/07/14/326027.html
+
+- http://stackoverflow.com/questions/20485188/gracefully-exit-a-clojure-core-async-go-loop-on-kill
 
 ### 有意思的包
 
