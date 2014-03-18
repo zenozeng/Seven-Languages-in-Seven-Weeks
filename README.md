@@ -12,7 +12,7 @@ method_missing 非常好用，具体见 ruby/csv
 
 ## [TODO] Erlang
 
-## [DOING] Clojure
+## [DONE] Clojure
 
 写 Clojure 的话 Lighttable 不错。
 
